@@ -1,0 +1,27 @@
+{
+    "name": "dota2-rpc",
+    "scripts": {
+        "build": "tsc",
+        "start": "node ./prod/class.js"
+    },
+    "main": "prod/class.js",
+    "bin": "prod/class.js",
+    "pkg": {
+        "assets": [
+            "node_modules/node-hide-console-window/build/Release/node-hide-console-window.node"
+        ],
+        "targets": [
+            "node12-win-x64"
+        ],
+        "output": "dota2-rpc.exe"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "node-hide-console-window": "^2.1.1",
+        "systray": "^1.0.5"
+    },
+    "devDependencies": {
+        "@types/discord-rpc": "^4.0.3",
+        "@types/node": "^17.0.45"
+    }
+}
