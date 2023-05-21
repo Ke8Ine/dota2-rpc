@@ -2,7 +2,7 @@
     "name": "dota2-rpc",
     "scripts": {
         "build": "tsc",
-        "start": "node ./prod/class.js"
+        "start": "node ./prod/index.js"
     },
     "main": "prod/class.js",
     "bin": "prod/class.js",
